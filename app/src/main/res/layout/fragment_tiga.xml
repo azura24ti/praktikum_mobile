@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".pertemuan_6.TigaFragment"
+    tools:context=".Home.pertemuan_6.TigaFragment"
     android:background="#D6EFA3">
 
     <TextView

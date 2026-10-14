@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#EDECA0"
-    tools:context=".pertemuan_6.DuaFragment">
+    tools:context=".Home.pertemuan_6.DuaFragment">
 
     <TextView
         android:layout_width="match_parent"
