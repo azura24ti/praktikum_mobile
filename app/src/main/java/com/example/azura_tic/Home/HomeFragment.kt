@@ -11,6 +11,7 @@ import android.view.ViewGroup
 import androidx.appcompat.app.AlertDialog
 import com.example.azura_tic.Home.pertemuan_5.LimaActivity
 import com.example.azura_tic.Home.pertemuan_6.EnamActivity
+import com.example.azura_tic.Home.pertemuan_9.NinthActivity
 import com.example.azura_tic.LoginActivity
 import com.example.azura_tic.R
 import com.example.azura_tic.databinding.FragmentHomeBinding
@@ -89,5 +90,8 @@ class HomeFragment : Fragment() {
                 .show()
         }
 
+        binding.btnToNinth.setOnClickListener {
+            startActivity(Intent(requireContext(), NinthActivity::class.java))
+        }
     }
 }

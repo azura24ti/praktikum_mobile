@@ -44,4 +44,7 @@ dependencies {
     androidTestImplementation(libs.androidx.espresso.core)
     androidTestImplementation(libs.androidx.junit)
     implementation("com.github.bumptech.glide:glide:4.16.0")
+    implementation("androidx.gridlayout:gridlayout:1.0.0") // Tahap 4: GridLayout
+    implementation("androidx.viewpager2:viewpager2:1.1.0") // Tahap 5: ViewPager2
+    implementation("com.tbuonomo:dotsindicator:5.1.0") // Tahap 6: DotsIndicator
 }

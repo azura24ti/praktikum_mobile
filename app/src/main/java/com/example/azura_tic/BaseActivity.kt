@@ -10,6 +10,7 @@ import androidx.fragment.app.Fragment
 import com.example.azura_tic.Home.HomeFragment
 import com.example.azura_tic.Message.MessageFragment
 import com.example.azura_tic.More.MoreFragment
+import com.example.azura_tic.R.id
 import com.example.azura_tic.databinding.ActivityBaseBinding
 
 class BaseActivity : AppCompatActivity() {
@@ -21,7 +22,7 @@ class BaseActivity : AppCompatActivity() {
 
         binding = ActivityBaseBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
+        ViewCompat.setOnApplyWindowInsetsListener(findViewById(id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, 0) // bottom = 0
             insets
@@ -30,15 +31,15 @@ class BaseActivity : AppCompatActivity() {
         replaceFragment(HomeFragment())
         binding.bottomNavView.setOnItemSelectedListener {
             when (it.itemId) {
-                R.id.home -> {
+                id.home -> {
                     replaceFragment(HomeFragment())
                     true
                 }
-                R.id.message -> {
+                id.message -> {
                     replaceFragment(MessageFragment())
                     true
                 }
-                R.id.more -> {
+                id.more -> {
                     replaceFragment(MoreFragment())
                     true
                 }
