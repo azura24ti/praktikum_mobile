@@ -9,6 +9,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.appcompat.app.AlertDialog
+import com.example.azura_tic.Home.pertemuan_11.EleventhActivity
 import com.example.azura_tic.Home.pertemuan_5.LimaActivity
 import com.example.azura_tic.Home.pertemuan_6.EnamActivity
 import com.example.azura_tic.Home.pertemuan_9.NinthActivity
@@ -71,6 +72,10 @@ class HomeFragment : Fragment() {
         }
         binding.btnToEnam.setOnClickListener {
             val intent = Intent(requireContext(), EnamActivity::class.java)
+            startActivity(intent)
+        }
+        binding.btnToEleventh.setOnClickListener {
+            val intent = Intent(requireContext(), EleventhActivity::class.java)
             startActivity(intent)
         }
 
