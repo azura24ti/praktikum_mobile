@@ -10,6 +10,7 @@ import androidx.fragment.app.Fragment
 import com.example.azura_tic.Home.HomeFragment
 import com.example.azura_tic.Message.MessageFragment
 import com.example.azura_tic.More.MoreFragment
+import com.example.azura_tic.Note.NoteFragment
 import com.example.azura_tic.R.id
 import com.example.azura_tic.databinding.ActivityBaseBinding
 
@@ -41,6 +42,10 @@ class BaseActivity : AppCompatActivity() {
                 }
                 id.more -> {
                     replaceFragment(MoreFragment())
+                    true
+                }
+                id.note -> {
+                    replaceFragment(NoteFragment())
                     true
                 }
                 else -> false // false jika item tidak dikenal
