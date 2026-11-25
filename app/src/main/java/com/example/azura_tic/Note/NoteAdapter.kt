@@ -31,7 +31,7 @@ class NoteAdapter(
         holder.binding.tvContent.text = note.content
         holder.binding.btnDelete.setOnClickListener {
             MaterialAlertDialogBuilder(holder.itemView.context)
-                .setTitle("Hapus Catatan")
+                .setTitle("Hapus CatatanModel")
                 .setMessage("Yakin ingin menghapus catatan ini?")
                 .setPositiveButton("Ya") { _, _ -> onDelete(note) }
                 .setNegativeButton("Batal", null)

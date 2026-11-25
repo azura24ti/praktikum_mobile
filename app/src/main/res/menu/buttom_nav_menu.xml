@@ -16,4 +16,8 @@
         android:id="@+id/note"
         android:icon="@drawable/ic_note"
         android:title="Note" />
+    <item
+        android:id="@+id/catatan"
+        android:icon="@drawable/ic_catatan"
+        android:title="Catatan" />
 </menu>

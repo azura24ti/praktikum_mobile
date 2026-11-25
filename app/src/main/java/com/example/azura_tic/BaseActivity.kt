@@ -7,6 +7,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import androidx.fragment.app.Fragment
+import com.example.azura_tic.Catatan.CatatanFragment
 import com.example.azura_tic.Home.HomeFragment
 import com.example.azura_tic.Message.MessageFragment
 import com.example.azura_tic.More.MoreFragment
@@ -46,6 +47,10 @@ class BaseActivity : AppCompatActivity() {
                 }
                 id.note -> {
                     replaceFragment(NoteFragment())
+                    true
+                }
+                id.catatan -> {
+                    replaceFragment(CatatanFragment())
                     true
                 }
                 else -> false // false jika item tidak dikenal

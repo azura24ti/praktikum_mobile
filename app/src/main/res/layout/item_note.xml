@@ -33,4 +33,11 @@
         android:contentDescription="Hapus catatan"
         android:padding="12dp"
         android:src="@drawable/ic_delete" />
+    <ImageView
+        android:id="@+id/btnEdit"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:contentDescription="Edit catatan"
+        android:padding="12dp"
+        android:src="@drawable/ic_edit2" />
 </LinearLayout>
